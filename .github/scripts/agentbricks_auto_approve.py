@@ -6,6 +6,7 @@ takes the model's word that a PR is safe to approve.
 
 Usage: agentbricks_auto_approve.py --review REVIEW --diff DIFF [--min-score N] [--max-lines N]
 Prints a JSON object {"approve": bool, "reasons": [...]}; reasons explain a refusal.
+It exits 0 whether or not it approves, so callers read "approve", not the exit code.
 """
 
 from __future__ import annotations
