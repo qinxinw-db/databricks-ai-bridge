@@ -14,6 +14,8 @@ uv sync
 uv run --group tests pytest tests/
 ```
 
+To run a single test file, pass its path, for example `uv run --group tests pytest tests/databricks_ai_bridge/utils/test_vector_search.py`.
+
 ## Run Type Checker
 
 
